@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SDL Emscripten Test</title>
+    </head>
+    <body>
+        <p id="loading-indicator">Loading...</p>
+        <canvas id="canvas"></canvas> <!-- There's an SDL hint for this -->
+        <script>
+            var Module = {
+                onRuntimeInitialized: function() {
+                    document.querySelector("#loading-indicator").style.display = "none";
+                },
+            }
+        </script>
+        <script src="out.js"></script>
+    </body>
+</html>

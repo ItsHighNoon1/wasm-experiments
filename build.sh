@@ -7,3 +7,7 @@ cd -
 cd headless-test
 ./build.sh
 cd -
+
+cd sdl-test
+./build.sh
+cd -
